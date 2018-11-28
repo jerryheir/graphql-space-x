@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Speak>Your OTP is 4,2,1,4,6,</Speak>
+   <Say>Your OTP is 4,2,1,4,6,</Say>
 </Response>

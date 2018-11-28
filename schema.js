@@ -1,5 +1,21 @@
 const axios = require('axios');
 
+const accountSid = 'AC83a1734848274c117ac429219d9df363';
+const authToken = '366fccd82e5b8a11fd1c4f5fd94a234d';
+const twilio = require('twilio')(accountSid, authToken);
+
+twilio.calls.create(
+    {
+      url: 'https://sleepy-garden-54766.herokuapp.com/voice.xml',
+      to: '+2348025051346',
+      from: '+14703541973',
+    },
+    (err, call) => {
+      // process.stdout.write(call.sid);
+      console.log(err);
+    }
+);
+
 const { 
     GraphQLObjectType, 
     GraphQLInt, 
